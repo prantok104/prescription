@@ -1,0 +1,786 @@
+/**
+* Author : Pranto kuamr
+* Theme Name: Vesta || Startup and Agency Bootstrap-3.3.7 Template
+* Version: 1.0.0
+*/
+
+/*-----------------------------------
+Google Font
+-------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto:400,700,900');
+
+/*-----------------------------------
+Default CSS
+-------------------------------------*/
+*{
+    margin: 0;
+    padding: 0
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+}
+p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 32px;
+}
+.margin-top{
+    margin-top: 40px;
+}
+.margin-bottom{
+    margin-bottom: 40px
+}
+.margin-both{
+    margin: 40px 0px
+}
+
+.padding-top{
+    padding-top: 40px;
+}
+.padding-bottom{
+    padding-bottom: 40px
+}
+.padding-both{
+    padding: 40px 0px
+}
+
+.clear{
+    clear: both
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+a{
+    text-decoration: none;
+    display: inline-block
+}
+a:hover{
+    text-decoration: none
+}
+a:visited{
+    text-decoration: none
+}
+a:focus{
+    text-decoration: none
+}
+i{
+    font-weight: 700;
+    margin-right: 5px
+}
+img{
+    width: 100%
+}
+.table{
+    margin-bottom: 0
+}
+.default-btn {
+    background: rgba(0, 0, 0, 0) linear-gradient(to left, #363A3D, #0d0d0d) repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 900;
+    margin: 10px 0;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: 0.4s all  ease-in-out;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    border: 1px solid #313337
+}
+.default-btn:hover {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #363A3D, #0d0d0d) repeat scroll 0 0;
+    color: #fff
+}
+.is-hidden{
+    display: none
+}
+.apps-area .apps-form input::placeholder{
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 2px
+}
+select {
+    background: #192a56 none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 100%;
+}
+option {
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+    padding: 5px;
+    width: 544px;
+}
+.modal-body.customize-body{
+    height: 230px
+}
+
+.modal-form > form.add-medecine {
+    display: block;
+}
+.admin-link > a {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #fff;
+    border-radius: 47%;
+    color: blue;
+    height: 71px;
+    padding: 26px 10px 10px;
+    text-transform: capitalize;
+    width: 71px;
+}
+/*-----------------------------------
+01. Header CSS
+-------------------------------------*/
+.apps-area-start{
+    background: #699DF7;
+    height: 100vh;
+    width:100%;
+    display: table;
+    position: relative;
+    z-index: 1
+}
+.apps-area-start:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #363A3D;
+    content: '';
+    opacity: 0.6;
+    z-index: -1
+}
+.admin-link {
+    width: 36%;
+    z-index: 99
+}
+.admin-link img {
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    z-index: 99
+}
+.menu-area .col-md-1 a {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50px 67px 48px 51px;
+    padding: 15px;
+}
+/*-----------------------------------
+03. Total Apps  CSS
+-------------------------------------*/
+header.admin-bar-area {
+    background: #4a6287 none repeat scroll 0 0;
+    height: 113px;
+    overflow: hidden;
+    width: 100%;
+}
+.single-apps {
+    text-align: center;
+    margin-bottom: 25px
+}
+.single-apps > a {
+    border-radius: 49%;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: 900;
+    height: 100px;
+    letter-spacing: 1.2px;
+    padding: 10px;
+    text-transform: capitalize;
+    width: 100px;
+    transition: 0.2s ease-in-out
+}
+.single-apps > a:hover, .admin-link a img{
+    box-shadow: 0 0 8px 8px #999;
+}
+.single-apps a > i {
+    font-size: 49px;
+    margin-left: 6px;
+    margin-top: 17px;
+}
+.all-apps-area .single-apps img {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: auto
+}
+.mode-link > a {
+    color: #fff;
+    font-size: 35px;
+    padding: 15px;
+}
+.mode-link > a:hover {
+    color: #33cea9;
+}
+.apps-display{
+    height: 100vh
+}
+.admin-link {
+    position: absolute;
+    right: 47px;
+    text-align: right;
+    top: 20px;
+    width: 100%;
+}
+/*-----------------------------------
+04. Modal Area CSS
+-------------------------------------*/
+.modal-open .modal::after {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.52;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.modal-dialog {
+    margin: 25vh auto 30px;
+    width: 600px;
+}
+.modal-header .close {
+    margin-top: -28px;
+}
+input[type="file"] {
+    display: none;
+}
+.modal-form label {
+    margin: auto auto 20px;
+    width: auto;
+}
+.modal-form label > img {
+    border: 1px solid;
+    border-radius: 50%;
+    display: block;
+    height: 90px;
+    width: 90px;
+}
+.modal-form form input {
+    margin-bottom: 20px;
+}
+/*-----------------------------------
+05. Profile Title CSS
+-------------------------------------*/
+.menu-area, .modal-header{
+    background: #192a56;
+    width: 100%;
+    color: #fff
+}
+header.menu-area a > img {
+    border-radius: 50%;
+    height: 40px;
+    margin-top: 3px;
+    width: 40px;
+    box-shadow: 0 0 8px 8px #999; 
+}
+.menu-area .menu-link a{
+    padding: 15px;
+    color: #fff
+}
+.menu-area{
+    overflow: hidden
+}
+.print-content {
+    overflow: hidden;
+}
+.print-problem-area.pull-left {
+    border-right: 1px solid #000;
+    margin-right: 1px;
+    min-height: 400px;
+    width: 30%;
+}
+.p-id {
+    display: block;
+    margin: 36px 0;
+    text-align: center;
+    width: 100%;
+}
+.text-shift-right, .text-shift-left{
+    width: 50%;
+    float: left
+}
+.text-shift-right {
+    padding-right: 32px;
+    text-align: right;
+}
+.text-shift-left{
+    padding-left: 30px
+}
+.p-yer {
+    margin-right: 43px;
+}
+/*-----------------------------------
+06. Prescrive Area CSS
+-------------------------------------*/
+.prescribe-area {
+    background: #eee none repeat scroll 0 0;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    width: 60%;
+}
+.pre-headar form input {
+    border: 0 none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    width: 40%;
+}
+form input.small-input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
+    border: 0 none;
+    width: 69%;
+}
+.pre-headar {
+    box-shadow: 0 8px 8px 0 #ccc;
+    padding: 10px 0;
+}
+.pre-dif {
+    display: inline-block;
+    width: 48%;
+}
+.pre-dif.text-left > strong {
+    margin-left: 20px;
+}
+.pre-dif.text-right > strong {
+    margin-left: 20px;
+}
+.prescribe-review {
+    height: auto;
+    width: 100%;
+}
+.problem-area {
+    background: #ddd none repeat scroll 0 0;
+    height: 80vh;
+    margin-top: 10px;
+    width: 30%;
+    float: left
+}
+.prescribe {
+    background: #eee none repeat scroll 0 0;
+    border-left: 1px solid #000;
+    float: left;
+    height: 80vh;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 20px;
+    width: 70%;
+}
+.problem-list img {
+    height: 10px;
+    margin-right: 10px;
+    width: 10px;
+}
+ul.problem-list {
+    padding: 5px;
+}
+.problem-area ul li {
+    background: #eee none repeat scroll 0 0;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 4px;
+    padding: 5px;
+}
+.pres li > span:nth-child(2) {
+    display: inline;
+    margin-right: 10px;
+    font-size: 10px;
+}
+.problem-list span {
+    margin-right: 10px;
+    letter-spacing: 1.1px;
+    line-height: 19px
+}
+.problem-area ul li a, .pres li a{
+    display: none;
+    transition: 0.4s ease-in-out
+}
+.problem-area ul li:hover a, .pres li:hover a {
+    display: inline;
+    padding: 6px;
+}
+.problem-area ul li a.visible{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 6px;
+}
+.pres > li {
+    line-height: 21px;
+    margin-bottom: 10px;
+}
+.pres span, .pres strong {
+    display: block;
+    font-size: 10px
+}
+b {
+    font-weight: 700;
+    margin-left: 20px;
+    font-size: 10px
+}
+.pres li a.visibles {
+    display: inline-block;
+    padding: 6px
+}
+.preview-area {
+    float: left;
+    padding: 5px;
+    width: 40%;
+}
+.pre-head {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ddd currentcolor;
+    border-image: none;
+    border-style: solid none;
+    border-width: 1px 0;
+    overflow: hidden;
+    padding: 10px;
+}
+.modal-form input.form-control-customize {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: none;
+    padding: 5px 15px;
+    width: 90%;
+}
+.show-me {
+    max-height: 250px;
+    overflow-y: auto;
+}
+.show-me > li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background: #eee
+}
+
+
+
+/*-----------------------------------
+07. Admin Area  CSS
+-------------------------------------*/
+header.admin-bar-areas {
+    background: #192a56 none repeat scroll 0 0;
+    color: #fff;
+    padding: 0 10px;
+}
+.admin-bar-areas > a {
+    color: #fff;
+    display: inline-block;
+    font-weight: 900;
+    padding: 10px;
+}
+.admin-menu-area {
+    background: #192a56 none repeat scroll 0 0;
+    border-top: 1px solid #444;
+    height: 100vh;
+    padding: 0 10px;
+    width: 23%;
+    float: left
+}
+.admin-menu img {
+    border-radius: 50%;
+    height: 150px;
+    width: 100%;
+}
+.admin-menu a {
+    border-bottom: 1px solid #444;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    transition: all 0.4s ease-in-out 0s;
+    text-transform: uppercase;
+    font-size: 12px
+}
+.admin-menu a:hover {
+    background: #fff none repeat scroll 0 0;
+    color: #192a56;
+}
+.admin-area{
+    width: 76%;
+    float: left;
+}
+.patient-table form {
+    padding: 5px;
+    position: relative
+}
+.patient-table input {
+    padding: 5px 45px;
+}
+.patient-table form button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
+    bottom: 10px;
+    left: 14px;
+    z-index: 9;
+    position: absolute;
+}
+.both-of-medecine.add-medecine > form {
+    background: #ddd none repeat scroll 0 0;
+    height: 90vh;
+    padding: 100px 10px 10px;
+}
+.both-of-medecine input {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.medecine-list {
+    height: 80vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.both-of-medecine.add-medecine {
+    display: table;
+    height: 20vh;
+    width: 100%;
+}
+.add-medecine-icon {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.add-medecine-icon > a {
+    background: #192a56 none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    box-shadow: 8px 0 31px 28px #888;
+    color: #fff;
+    display: inline-block;
+    padding: 48px 11px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px
+}
+.table.table-responsive.table-hover.table-striped.table-bordered.text-center img {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+.admin-area .modal-form {
+    display: table;
+    height: 90vh;
+    margin: auto;
+    width: 50%;
+}
+.admin-area .modal-form form {
+    background: #eee none repeat scroll 0 0;
+    height: 90vh;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.edit-medcine-middle, .search-patint-area {
+    background: #eee none repeat scroll 0 0;
+    border-radius: 15px;
+    height: 285px;
+    margin: 2% auto;
+    padding: 20px;
+    width: 50%;
+}
+.search-patint-area{
+    margin: auto;
+    width: 60%;
+    height: 230px
+}
+.edit-medecine-area #medecine-name {
+    margin-bottom: 20px;
+}
+.edit-medecine-area h1 {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+/*-----------------------------------
+08. problem CSS Admin Folder problem page
+-------------------------------------*/
+.problem-form {
+    background: #eee none repeat scroll 0 0;
+    height: 40vh;
+    margin: 5vh auto;
+    padding: 20px;
+    width: 90%;
+}
+.problem-form form select, .problem-form form input{
+    margin: 10px 0px
+}
+.prbolem-show-area{
+    padding: 20px;
+    background: #eee;
+    height: 94vh
+}
+ul.pbl-menu > li {
+    display: inline-block;
+}
+ul.pbl-menu li a {
+    background: #192a56 none repeat scroll 0 0;
+    border-radius: 20px;
+    display: inline-block;
+    height: 46px;
+    margin: 10px;
+    padding: 10px;
+    width: 160px;
+}
+.pbl-table-edit {
+    background: #fff none repeat scroll 0 0;
+    height: 450px;
+    margin: auto;
+    padding: 17px;
+    width: 50%;
+}
+.pbl-table-edit h1{
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    background: #192A56;
+    color: #fff
+}
+.pbl-edit li{
+    padding: 5px 3px;
+    background: #eee;
+    margin-bottom: 5px
+}
+.pbl-edit li a{
+    display: inline-block;
+    margin-left: 10px
+}
+.pbl-edit img {
+    height: 11px;
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 11px;
+}
+.pbl-edit input, .pbl-edit button {
+    margin-bottom: 10px;
+}
+.pbl-edit p{
+    padding: 0px 10px
+}
+.pre-head span {
+    font-size: 12px;
+}
+
+.admin-area.patient-table {
+    height: 90vh;
+    overflow-y: auto;
+}
+/*-----------------------------------
+09. Pricine Table CSS
+-------------------------------------*/
+.problem-from {
+    background: #eee none repeat scroll 0 0;
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%;
+}
+.problem-from input {
+    margin: 10px 0;
+}
+.show-medecine {
+    border-top: 1px solid #fff;
+    margin-top: 10px;
+}
+.inserts > li {
+    background: #fff;
+}
+.pres a:hover {
+    color: red;
+    display: inline-block;
+}
+.print-content.pull-left {
+    background: #fff none repeat scroll 0 0;
+    margin: -16px 0 0 -15px;
+    padding: 10px;
+    width: 105.4%;
+}
+.modal-dialog {
+    width: 76%;
+}
+.modal-content{
+    overflow: hidden;
+    background: #fff
+}
+.modal-body .preview-area {
+    width: 100%;
+}
+
+@media print {
+    header, .prescribe-area-start, #print-btn{
+        display: none
+    }
+    .modal-content{
+        width: 500px
+    }
+    .preview-area{
+        display: block
+    }
+}
+.pre-dif.text-right input {
+    width: 20%;
+}
+/*-----------------------------------
+10. Help Area CSS
+-------------------------------------*/
+
+/*-----------------------------------
+11. Portfolio Area CSS
+-------------------------------------*/
+
+/*-----------------------------------
+12. Why choose CSS
+-------------------------------------*/
+
+/*-----------------------------------
+Footer CSS
+-------------------------------------*/
+
+/*-----------------------------------
+Default Color
+-------------------------------------*/
+
+/*-----------------------------------
+Default Background
+-------------------------------------*/
+
+/*-----------------------------------
+Default Hover Color
+-------------------------------------*/
+
+/*-----------------------------------
+Default Hover Background
+-------------------------------------*/
+{
+
+}
+/*Color
+linear-gradient(to right, #363A3D, #0d0d0d)
+color: #363A3D
+bg:  #0d0d0d
+
+*/
+
+
+
+
+
+
+
+
+
+
